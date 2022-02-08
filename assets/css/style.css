@@ -1,0 +1,226 @@
+/*General CSS for the Entire Site*/
+body {
+    padding-top: 50px;
+}
+
+body, html{
+  background-size: cover;
+}
+
+* {
+    border-radius: 0 !important;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #5B0000;
+}
+.nav.navbar-nav.navbar-right li a:hover {
+    background-color: #5B0000;
+    border-color: #5B0000;
+    color: #FFFFFF;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+#nav {
+    color: #5B0000;
+    font-family: "DejaVu Sans Light";
+
+}
+
+.navbar-right button {
+    margin-top: 7px;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+
+    background-color: #999;
+
+}
+
+#log-in-button{
+  margin-right: 7px;
+}
+
+.btn {
+    border-radius: 0 !important;
+    font-weight: 700;
+}
+
+.jumbotron {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "DejaVu Sans Light";
+    margin-bottom: 0;
+    background-size: cover;
+    text-shadow:
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+#homeHeading {
+    font-family: "DejaVu Sans Light";
+}
+
+
+.member {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.member-info {
+    text-align: center;
+    width: 207px;
+
+}
+
+.member-image {
+    height: 310px;
+    width: 207px;
+}
+
+.img-responsive {
+    margin-bottom:20px;
+}
+
+
+#gallery {
+    margin-top: 20px;
+}
+
+#social {
+    color: #5B0000;
+}
+
+
+
+
+/*Home Page CSS Below*/
+
+/*CSS for attendance page*/
+.subject-info-box-1,
+.subject-info-box-2 {
+  float: left;
+  width: 45%;
+}
+
+.subject-info-box-1 select,
+  .subject-info-box-2 select {
+  height: 70%;
+  padding: 0;
+}
+
+.subject-info-box-1 select option,
+    .subject-info-box-2 select option {
+  padding: 4px 10px 4px 10px;
+}
+
+.subject-info-box-1 select option:hover,
+    .subject-info-box-2 select option:hover {
+  background: #EEEEEE;
+}
+
+.subject-info-arrows {
+  float: left;
+  width: 10%;
+}
+
+.subject-info-arrows input {
+  width: 70%;
+  margin-bottom: 5px;
+}
+
+/* CSS for the question mark help tips */
+
+.help-tip{
+  position: relative;
+  float:right;
+  right:100px;
+  top: 5px;
+
+  text-align: center;
+  background-color: #BCDBEA;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 26px;
+  cursor: default;
+}
+
+.help-tip:before{
+  content:'?';
+  font-weight: bold;
+  color:#fff;
+}
+
+.help-tip:hover p{
+  display:block;
+  z-index:1000;
+  transform-origin: 100% 0%;
+
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{  /* The tooltip */
+  display: none;
+  text-align: left;
+  background-color: #1E2021;
+  padding: 20px;
+  width: 300px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  top:30px;
+
+  color: #FFF;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.help-tip p:before{ /* The pointer of the tooltip */
+  position: absolute;
+  content: '';
+  width:0;
+  height: 0;
+  border:6px solid transparent;
+  border-bottom-color:#1E2021;
+  left:10px;
+  top:-12px;
+}
+
+.help-tip p:after{ /* Prevents the tooltip from being hidden */
+  width:100%;
+  height:40px;
+  content:'';
+  position: absolute;
+  top:-40px;
+  left:0;
+}
+
+/* CSS animation */
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity:100%;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:100%; }
+}
